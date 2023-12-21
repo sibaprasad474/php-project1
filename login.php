@@ -267,22 +267,22 @@
     <h2>Welcome to Trip4Life.com</h2>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="user-details.php" method="POST">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="text" placeholder="Name" name="name" />
+                <input type="email" placeholder="Email" name="email" />
+                <input type=" password" placeholder="Password" name="password" />
+                <button name="signup">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="user-details.php" method="POST">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign In</button>
+                <input type="email" placeholder="Email" name="email" />
+                <input type="password" placeholder="Password" name="password" />
+                <button name="signin">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -309,6 +309,13 @@
         </p>
     </footer>
 </body>
+<?php
+if (isset($_POST['signup'])) {
+    header('location:user-details.php');
+}
+
+?>
+
 <script>
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
