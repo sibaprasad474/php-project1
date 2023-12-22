@@ -267,21 +267,21 @@
     <h2>Welcome to Trip4Life.com</h2>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="user-details.php" method="POST">
+            <form action="user-validation.php" method="POST">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" name="name" />
                 <input type="email" placeholder="Email" name="email" />
-                <input type="text" placeholder="Password" name="password" />
+                <input type="password" placeholder="Password" name="password" />
                 <button name="signup">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="user-details.php" method="POST">
+            <form action="user-validation.php" method="POST">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" name="email" />
-                <input type="text" placeholder="Password" name="password" />
+                <input type="password" placeholder="Password" name="password" />
                 <button name="signin">Sign In</button>
             </form>
         </div>
@@ -290,12 +290,12 @@
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn"name="signin">Sign In</button>
+                    <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>New to Trip4Life !</h1>
                     <p>Enter your details and start journey with us</p>
-                    <button class="ghost" id="signUp"name="signup">Sign Up</button>
+                    <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -311,10 +311,48 @@
 </body>
 <?php
 if (isset($_POST['signup'])) {
-    header('location:user-details.php ? status=signup');
+    // require_once "db-connect.php";
+    // $name = $_POST['name'];
+    // $email = $_POST['email'];
+    // $password = $_POST['password'];
+
+    // $qry = "INSERT INTO users (name,email,password) VALUES ('$name','$email','$password')";
+    // $conn = $connection->query($qry);
+    // try {
+    //     if ($conn) {
+    //         header('location:login.php? status=registered');
+    //     } else {
+    //         header('location:login.php? status=registration failed');
+    //     }
+    // } catch (Exception $e) {
+    //     echo "Error: " . $e->getMessage();
+    // }
+    header('location:user-validation.php');
 }
-if(isset($_POST['signin'])){
-    header('location:user-details.php ? status=signin ');
+
+?>
+
+<?php
+if (isset($_POST['signin'])) {
+    // try {
+    //     require_once "db-connect.php";
+    //     $email = $_POST['email'];
+    //     $password = $_POST['password'];
+
+    //     $qry = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+    //     $result = $connection->query($qry);
+
+    
+    //     if ($result && $result->num_rows > 0) {
+    //         $vals = $result->fetch_assoc();
+    //         header('location:navbar.php?status=success');
+    //     } else {
+    //         header('location:navbar.php?status=failed');
+    //     }
+    // } catch (Exception $e) {
+    //     echo $e->getMessage();
+    // }
+    header('location:user-validation.php');
 }
 ?>
 
