@@ -272,7 +272,7 @@
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" name="name" />
                 <input type="email" placeholder="Email" name="email" />
-                <input type=" password" placeholder="Password" name="password" />
+                <input type="text" placeholder="Password" name="password" />
                 <button name="signup">Sign Up</button>
             </form>
         </div>
@@ -281,7 +281,7 @@
                 <h1>Sign in</h1>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" name="email" />
-                <input type="password" placeholder="Password" name="password" />
+                <input type="text" placeholder="Password" name="password" />
                 <button name="signin">Sign In</button>
             </form>
         </div>
@@ -290,12 +290,12 @@
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <button class="ghost" id="signIn"name="signin">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>New to Trip4Life !</h1>
                     <p>Enter your details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button class="ghost" id="signUp"name="signup">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -311,9 +311,11 @@
 </body>
 <?php
 if (isset($_POST['signup'])) {
-    header('location:user-details.php');
+    header('location:user-details.php ? status=signup');
 }
-
+if(isset($_POST['signin'])){
+    header('location:user-details.php ? status=signin ');
+}
 ?>
 
 <script>
