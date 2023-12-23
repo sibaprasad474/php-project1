@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_POST['signup'])) {
+
     require_once "db-connect.php";
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -31,20 +32,16 @@ if (isset($_POST['signin'])) {
         $qry = "SELECT * FROM users WHERE email='$email' AND password='$password'";
         $result = $connection->query($qry);
 
-    
+
         if ($result && $result->num_rows > 0) {
             $vals = $result->fetch_assoc();
-            
-            header('location:navbar.php?status=success');
+            $id = $vals['id'];
+            header("location:navbar.php?status=success&id=$id");
         } else {
-            header('location:navbar.php?status=failed');
+            header('location:login.php?status=failed');
         }
     } catch (Exception $e) {
         echo $e->getMessage();
     }
 }
-?>
-
-
-
 ?>
