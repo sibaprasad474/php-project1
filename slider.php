@@ -128,6 +128,7 @@
                 flex: 0 0 auto;
                 width: 25%;
                 min-width: 150px;
+                color: black;
             }
 
             .credit {
