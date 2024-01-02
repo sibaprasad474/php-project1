@@ -20,17 +20,6 @@ $vals = $conn->fetch_assoc();
 <body>
   <div id="navbar">
     <div class="p-3 bg-dark text-white">
-      <div class="flexMain">
-        <div class="flex1">
-
-        </div>
-        <div class="flex2 text-center">
-          <!-- <div><strong>"Embark on a lifetime of endless adventures with Travel4Life.com – where every journey is a story waiting to be written.</strong></div> -->
-        </div>
-        <div class="flex1">
-
-        </div>
-      </div>
     </div>
     <div id="menuHolder">
       <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
