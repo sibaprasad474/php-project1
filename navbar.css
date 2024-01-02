@@ -1,3 +1,6 @@
+*{
+  letter-spacing: 2px;
+}
 .flexMain {
     display:flex;
     align-items: center
@@ -6,13 +9,14 @@
   .flex2 { flex:2 }
   .flex3 { flex:3 }
   
-  button.siteLink {
-    margin-left:-5px;
-    border:none;
-    padding:24px;
-    display:inline-block;
-    min-width:115px;
-  }
+  button.whiteLink {
+    margin-left: -5px;
+    border: none;
+    padding: 24px;
+    display: inline-block;
+    min-width: 200px; /* Increase the minimum width as needed */
+}
+
   .whiteLink {
     background : #fff;
   }

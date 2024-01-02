@@ -34,7 +34,7 @@ $vals = $conn->fetch_assoc();
           </div>
 
           <div class="flex2 text-end d-none d-md-block">
-            <a href="./login.php ? logged-out"><button class="whiteLink siteLink">LOGOUT</button></a>
+            <a href="./login.php ? logg-out"><button class="whiteLink siteLink">LOGOUT</button></a>
           </div>
         </div>
       </div>
