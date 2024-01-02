@@ -36,9 +36,9 @@ if (isset($_POST['signin'])) {
         if ($result && $result->num_rows > 0) {
             $vals = $result->fetch_assoc();
             $id = $vals['id'];
-            header("location:navbar.php?status=success&id=$id");
+            header("location:index.php?status=success&id=$id");
         } else {
-            header('location:login.php?status=failed');
+            header('location:index.php?status=failed');
         }
     } catch (Exception $e) {
         echo $e->getMessage();
