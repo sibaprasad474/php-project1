@@ -19,8 +19,6 @@ $vals = $conn->fetch_assoc();
 
 <body>
   <div id="navbar">
-    <div class="p-3 bg-dark text-white">
-    </div>
     <div id="menuHolder">
       <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
         <div class="flexMain">

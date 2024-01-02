@@ -63,8 +63,8 @@
         .content-overlay button {
             padding: 10px 20px;
             font-size: 1em;
-            background-color: #ffffff;
-            color: #000000;
+            background-color:#fff;
+            color: #000;
             border: none;
             cursor: pointer;
         }
@@ -88,32 +88,12 @@
                 </div>
             </div>
         </div>
-        <div class="row border">
+        <div class="row border" id="row2">
             <div class="col bg-dark text-light text-center p-1 m-4 fs-5">Explore the options</div>
         </div>
-        <div class="row m-auto border">
-            <div class="col-3 m-auto text-center p-1 m-4 fs-5" id="row3">
-                <div class="card" style="width: 28rem;">
-                    <img src="https://images.unsplash.com/photo-1516406742981-2b7d67ec4ae8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 m-auto text-center p-1 m-4 fs-5" id="row3">
-                <div class="card" style="width: 28rem;">
-                    <img src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row border">
-            <div class="col text-center p-1 m-4 fs-5" id="row3">
-                <?php
-                include_once "./slider.php";
-                ?>
+        <div class="row border" id="row3">
+            <div class="col-3 m-auto text-center p-1 m-4 fs-5">
+                
             </div>
         </div>
     </div>
