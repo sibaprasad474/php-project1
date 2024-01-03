@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300&display=swap');
 *{
   letter-spacing: 2px;
+  
 }
 .flexMain {
     display:flex;
@@ -40,6 +42,7 @@
     font-size:32px;
     color:#252525;
     line-height : 1em;
+  font-family: 'Poppins', sans-serif;
   }
   #menuDrawer {
     background:#fff;

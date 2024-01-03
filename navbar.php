@@ -1,11 +1,3 @@
-<?php
-require_once "./db-connect.php";
-$id = $_GET['id'];
-$qry = "select * from users where id=$id";
-$conn = $connection->query($qry);
-$vals = $conn->fetch_assoc();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +18,7 @@ $vals = $conn->fetch_assoc();
             <button class="whiteLink siteLink" style="border-right:1px solid #eaeaea" onclick="menuToggle()"><i class="fas fa-bars me-2"></i> MENU</button>
           </div>
           <div class="flex3 text-center" id="siteBrand">
-            Travel4Life.com
+          Travel4Life.com
           </div>
 
           <div class="flex2 text-end d-block d-md-none">
@@ -57,12 +49,12 @@ $vals = $conn->fetch_assoc();
           </div>
         </div>
         <div>
-          <a href="#" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
+          <a href="./index.php" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-search me-3"></i>Explore</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-dollar-sign me-3"></i>Pricing</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-file-alt me-3"></i>Blog</a>
-          <a href="#" class="nav-menu-item"><i class="fas fa-building me-3"></i>About Us</a>
+          <a href="./about.php" class="nav-menu-item"><i class="fas fa-building me-3"></i>About Us</a>
         </div>
       </div>
     </div>
