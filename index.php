@@ -19,9 +19,12 @@
     <div id="nav">
         <?php 
         include_once "./navbar.php"; 
+        if(isset($_GET['id'])){
+            $id=$_GET['id'];
+        }
          ?>
     </div>
-    <form action="navigate.php" method="post">
+    <form action="navigate.php?id=<?php echo $id; ?>" method="POST">
     <div class="container1" id="container1" style="height:80vh;">
         <div class="row" id="row1" style="height:100%">
             <div class="col-sm-10 col-md-8 col-lg-8 border" id="banner">
@@ -29,15 +32,15 @@
                     <source src="./docs/bg1.mp4" type="video/mp4">
                 </video>
                 <div class="content-overlay">
-                    <?php
-                        require_once "./db-connect.php";
-                        if(isset($_GET['id'])){;
-                            $id=$_GET['id'];
-                        }
-                        $qry="SELECT * FROM USERS WHERE ID=$id";
-                        $conn=$connection->query($qry);
-                        $res=$conn->fetch_assoc();
-                    ?>
+                <?php
+                    require_once "./db-connect.php";
+                    // if(isset($_GET['id'])){;
+                    //     $id=$_GET['id'];
+                    // }
+                    $qry="SELECT * FROM USERS WHERE ID=$id";
+                    $conn=$connection->query($qry);
+                    $res=$conn->fetch_assoc();
+                ?>
                     <h1>Hey, <?php echo $res['name']; ?></h1>
                     <h1 class="font-mid">Unleash Your Wanderlust with <br> Travel4Life.com</h1>
                     <p>Embark on a journey of discovery and create timeless memories as you explore the world with Travel4Life.com.</p>

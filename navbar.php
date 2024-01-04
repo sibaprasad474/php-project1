@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +51,6 @@
         </div>
         <div>
           <?php
-          session_start();
           $id=$_GET['id'];
           $_SESSION['id']=$id;
               
@@ -56,8 +58,8 @@
           <a href="./index.php ?id=<?php echo $id; ?>" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
           <a href="#livings" class="nav-menu-item"><i class="fas fa-search me-3"></i>Explore</a>
           <a href="#services" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
-          <a href="#" class="nav-menu-item"><i class="fas fa-dollar-sign me-3"></i>Pricing</a>
-          <a href="#" class="nav-menu-item"><i class="fas fa-file-alt me-3"></i>Blog</a>
+          <!-- <a href="#" class="nav-menu-item"><i class="fas fa-dollar-sign me-3"></i>Pricing</a> -->
+          <!-- <a href="#" class="nav-menu-item"><i class="fas fa-file-alt me-3"></i>Blog</a> -->
           <a href="./about.php? id=<?php echo $id;?>" class="nav-menu-item"><i class="fas fa-building me-3"></i>About Us</a>
         </div>
       </div>
