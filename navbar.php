@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="./navbar.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
   <div id="navbar">
     <div id="menuHolder">
@@ -18,7 +16,7 @@
             <button class="whiteLink siteLink" style="border-right:1px solid #eaeaea" onclick="menuToggle()"><i class="fas fa-bars me-2"></i> MENU</button>
           </div>
           <div class="flex3 text-center" id="siteBrand">
-          Travel4Life.com
+            Travel4Life.com
           </div>
 
           <div class="flex2 text-end d-block d-md-none">
@@ -49,12 +47,18 @@
           </div>
         </div>
         <div>
-          <a href="./index.php" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
-          <a href="#" class="nav-menu-item"><i class="fas fa-search me-3"></i>Explore</a>
-          <a href="#" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
+          <?php
+          session_start();
+          $id=$_GET['id'];
+          $_SESSION['id']=$id;
+              
+          ?>
+          <a href="./index.php ?id=<?php echo $id; ?>" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
+          <a href="#livings" class="nav-menu-item"><i class="fas fa-search me-3"></i>Explore</a>
+          <a href="#services" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-dollar-sign me-3"></i>Pricing</a>
           <a href="#" class="nav-menu-item"><i class="fas fa-file-alt me-3"></i>Blog</a>
-          <a href="./about.php" class="nav-menu-item"><i class="fas fa-building me-3"></i>About Us</a>
+          <a href="./about.php? id=<?php echo $id;?>" class="nav-menu-item"><i class="fas fa-building me-3"></i>About Us</a>
         </div>
       </div>
     </div>

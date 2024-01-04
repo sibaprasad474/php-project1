@@ -261,10 +261,10 @@
             text-decoration: none;
         }
     </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h2>Welcome to Trip4Life.com</h2>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="user-validation.php" method="POST">
