@@ -49,50 +49,50 @@
             </div>
         </div>
     </div>
-    <h1 style="text-align: center; margin:2rem;">Explore staying options</h1>
-    <p style="text-align: center;padding:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit commodi assumenda ex voluptate necessitatibus animi omnis asperiores consequatur hic, aspernatur placeat, cupiditate corrupti ea enim nulla saepe eum laboriosam?</p>
+    <h1 style="text-align: center; margin:2rem;">Discover Your Ideal Stay</h1>
+<p style="text-align: center;padding:1rem;">Embark on a journey of comfort and luxury. Explore our diverse range of accommodations designed to elevate your travel experience.</p>
 
-    <div class="container2"id="livings">
-        <div class="left">
-            <h1 style="text-align: center;">DELUXE ROOMS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur, distinctio pariatur quae quo adipisci aspernatur modi, eveniet quam, labore nisi dolore eius voluptate voluptatem sapiente? Accusamus eaque tempore placeat.</p>
-            <button style="width:25%;margin:auto; height:3rem;"name="itenary">Explore</button>
-        </div>
-        <div class="right">
+<div class="container2" id="livings">
+    <div class="left">
+        <h1 style="text-align: center;">DELUXE ROOMS</h1>
+        <p>Indulge in unparalleled luxury with our Deluxe Rooms. Immerse yourself in comfort and style, making your stay truly memorable.</p>
+        <button style="width:25%;margin:auto; height:3rem;" name="itenary">Explore</button>
+    </div>
+    <div class="right">
 
-        </div>
     </div>
-    <div class="container2 container3">
-        <div class="left">
-            <h1 style="text-align: center;">VILLAS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur, distinctio pariatur quae quo adipisci aspernatur modi, eveniet quam, labore nisi dolore eius voluptate voluptatem sapiente? Accusamus eaque tempore placeat.</p>
-            <button style="width:25%;margin:auto; height:3rem;"name="itenary">Explore</button>
-        </div>
-        <div class="right" style="background:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
-        </div>
+</div>
+<div class="container2 container3">
+    <div class="left">
+        <h1 style="text-align: center;">VILLAS</h1>
+        <p>Experience the epitome of opulence with our exclusive Villas. Each villa is a sanctuary of tranquility, offering an escape like no other.</p>
+        <button style="width:25%;margin:auto; height:3rem;" name="itenary">Explore</button>
     </div>
-    <h1 style="text-align: center; margin-top:1rem">Explore Packages</h1><br>
-    <p style="text-align: center;padding:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit commodi assumenda ex voluptate necessitatibus animi omnis asperiores consequatur hic, aspernatur placeat, cupiditate corrupti ea enim nulla saepe eum laboriosam?</p>
+    <div class="right" style="background:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
+    </div>
+</div>
+<h1 style="text-align: center; margin-top:1rem">Discover Exclusive Packages</h1><br>
+<p style="text-align: center;padding:1rem;">Explore our curated packages designed to add excitement and adventure to your journey. Uncover unique experiences that stay etched in your memory.</p>
 
-    <!-- -------------------  -->
-    <div class="container2"id="services">
-        <div class="left"style="background:url('https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D;">
-            <h1 style="text-align: center;">ADVENTURE PACKAGES</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur, distinctio pariatur quae quo adipisci aspernatur modi, eveniet quam, labore nisi dolore eius voluptate voluptatem sapiente? Accusamus eaque tempore placeat.</p>
-            <button style="width:25%;margin:auto; height:3rem;"name="packages">Explore</button>
-        </div>
-        <div class="right" style="background:url('https://images.unsplash.com/photo-1696235683834-888c871ef91d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
-        </div>
+<!-- -------------------  -->
+<div class="container2" id="services">
+    <div class="left" style="background:url('https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D;">
+        <h1 style="text-align: center;">ADVENTURE PACKAGES</h1>
+        <p>Embark on thrilling adventures with our carefully crafted Adventure Packages. From mountain treks to exotic escapades, let the journey begin.</p>
+        <button style="width:25%;margin:auto; height:3rem;" name="packages">Explore</button>
     </div>
-    <div class="container2 container3">
-        <div class="left">
-            <h1 style="text-align: center;">SPIRITUALS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur, distinctio pariatur quae quo adipisci aspernatur modi, eveniet quam, labore nisi dolore eius voluptate voluptatem sapiente? Accusamus eaque tempore placeat.</p>
-            <button style="width:25%;margin:auto; height:3rem;"name="packages">Explore</button>
-        </div>
-        <div class="right" style="background:url('https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?q=80&w=1496&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
-        </div>
+    <div class="right" style="background:url('https://images.unsplash.com/photo-1696235683834-888c871ef91d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
     </div>
+</div>
+<div class="container2 container3">
+    <div class="left">
+        <h1 style="text-align: center;">SPIRITUAL JOURNEYS</h1>
+        <p>Embark on a spiritual quest with our curated Spiritual Journeys. Discover serenity and enlightenment in breathtaking destinations.</p>
+        <button style="width:25%;margin:auto; height:3rem;" name="packages">Explore</button>
+    </div>
+    <div class="right" style="background:url('https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?q=80&w=1496&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center;background-size:center;">
+    </div>
+</div>
     </form>
     <footer id="footer" style="background-color:#000;bottom:0; color:#fff;">
     <p style="text-align:center">©2024 sibaprasad mishra all rights reserved.</p>

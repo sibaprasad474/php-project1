@@ -14,13 +14,17 @@
 <body>
     <div id="nav">
         <?php
+        require_once "./db-connect.php";
         include_once "./navbar.php";
+        $qry="SELECT * FROM USERS WHERE ID=$id";
+        $conn=$connection->query($qry);
+        $res=$conn->fetch_assoc();
         ?>
     </div>
     <div class="container p-5 mt-5">
         <div class="upper mt-5 mb-5">
             <div class="text-center">
-                <h3 class="text-center">Hii Trip4Life</h3>
+                <h3 class="text-center">Welcome, <?php echo $res['name']; ?></h3>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim repellendus, ipsum quos corrupti nesciunt optio adipisci ad ullam amet?</p>
             </div>
         </div>
@@ -31,11 +35,11 @@
             <div class="b1 m-2 p-5">
                 <div class="card-group">
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1676385153271-965fc8b96522?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1704369671954-88ffd3b8bfa9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel A</h5>
+                            <a class="fas fa-map-marker-alt"></a> City A, Country A <br>
+                            <i class="fas fa-briefcase"></i> Deluxe Room <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -45,16 +49,17 @@
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>
+                    <!-- Add more cards with different content -->
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1704080668828-5ed22e758590?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel B</h5>
+                            <a class="fas fa-map-marker-alt"></a> City B, Country B <br>
+                            <i class="fas fa-briefcase"></i> Standard Room <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -62,18 +67,18 @@
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i> <!-- empty star -->
                             </div> <br>
-                            <p>(110 Reviews)</p>
+                            <p>(90 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1637407520401-9df815f602e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel C</h5>
+                            <a class="fas fa-map-marker-alt"></a> City C, Country C <br>
+                            <i class="fas fa-briefcase"></i> Suite <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -81,9 +86,9 @@
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i> <!-- empty star -->
                             </div> <br>
-                            <p>(110 Reviews)</p>
+                            <p>(120 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -92,11 +97,11 @@
             <div class="b2 m-2 p-5">
                 <div class="card-group">
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1515362778563-6a8d0e44bc0b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1704251647476-63620121ad8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel D</h5>
+                            <a class="fas fa-map-marker-alt"></a> City D, Country D <br>
+                            <i class="fas fa-briefcase"></i> Luxury Room <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -104,18 +109,19 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i> <!-- half-filled star -->
                             </div> <br>
-                            <p>(110 Reviews)</p>
+                            <p>(150 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>
+                    <!-- Add more cards with different content -->
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1704243147854-42600928d25f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel E</h5>
+                            <a class="fas fa-map-marker-alt"></a> City E, Country E <br>
+                            <i class="fas fa-briefcase"></i> Deluxe Suite <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -123,18 +129,18 @@
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="far fa-star"></i> <!-- half-filled star -->
                             </div> <br>
-                            <p>(110 Reviews)</p>
+                            <p>(130 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1704212564942-9f6955e1aea2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Hotel F</h5>
+                            <a class="fas fa-map-marker-alt"></a> City F, Country F <br>
+                            <i class="fas fa-briefcase"></i> Standard Suite <br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -142,9 +148,9 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div> <br>
-                            <p>(110 Reviews)</p>
+                            <p>(140 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Book Now</button>
                             </div>
                         </div>
                     </div>

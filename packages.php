@@ -14,13 +14,17 @@
 <body>
     <div id="nav">
         <?php
+        require_once "./db-connect.php";
         include_once "./navbar.php";
+        $qry="SELECT * FROM USERS WHERE ID=$id";
+        $conn=$connection->query($qry);
+        $res=$conn->fetch_assoc();
         ?>
     </div>
     <div class="container p-5 mt-5">
         <div class="upper mt-5 mb-5">
             <div class="text-center">
-                <h3 class="text-center">Hii Trip4Life</h3>
+                <h3 class="text-center">Welcome, <?php echo $res['name']; ?></h3>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim repellendus, ipsum quos corrupti nesciunt optio adipisci ad ullam amet?</p>
             </div>
         </div>
@@ -69,7 +73,7 @@
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1637407520401-9df815f602e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1484264883846-eb04404af310?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <a class="fas fa-map-marker-alt"></a> Your Location <br>
@@ -92,7 +96,7 @@
             <div class="b2 m-2 p-5">
                 <div class="card-group">
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1704251647476-63620121ad8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1544588440-fc7551331160?q=80&w=1522&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <a class="fas fa-map-marker-alt"></a> Your Location <br>
@@ -111,7 +115,7 @@
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1704243147854-42600928d25f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1584005609832-c8ec2a001ae3?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <a class="fas fa-map-marker-alt"></a> Your Location <br>
@@ -130,7 +134,7 @@
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1704212564942-9f6955e1aea2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <a class="fas fa-map-marker-alt"></a> Your Location <br>
