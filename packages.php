@@ -25,7 +25,7 @@
         <div class="upper mt-5 mb-5">
             <div class="text-center">
                 <h3 class="text-center">Welcome, <?php echo $res['name']; ?></h3>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim repellendus, ipsum quos corrupti nesciunt optio adipisci ad ullam amet?</p>
+                <p class="text-center">Explore the breathtaking wonders of the world with our exclusive travel packages. Immerse yourself in the allure of exotic destinations, where every moment is a new adventure. Uncover hidden gems, savor local cuisines, and create memories that will last a lifetime. Choose from our curated selection of travel packages designed to cater to your wanderlust. Embark on a journey of discovery, where the world becomes your playground. Book your dream escape today and let the exploration begin!"</p>
             </div>
         </div>
         <?php
@@ -35,11 +35,12 @@
             <div class="b1 m-2 p-5">
                 <div class="card-group">
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1704369671954-88ffd3b8bfa9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJla2tpbmd8ZW58MHx8MHx8fDA%3D" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Trekkings</h5>
+                            <a class="fas fa-map-marker-alt"></a> Kinnaur, Himalchal pradesh <br>
+                            <i class="fas fa-briefcase"></i> 4days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>10000 onwards.<br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -49,16 +50,38 @@
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
                             </div>
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1704080668828-5ed22e758590?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://img.freepik.com/free-photo/tent-by-lake-with-mountain-background_1340-34135.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Campings</h5>
+                            <a class="fas fa-map-marker-alt"></a>Spiti Valley,Himachal Pradesh<br>
+                            <i class="fas fa-briefcase"></i> 3days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>8000 onwards.<br>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i> <!-- empty star -->
+                            </div> <br>
+                            <p>(100 Reviews)</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="https://t3.ftcdn.net/jpg/01/40/51/56/360_F_140515612_0MMpqpsIvs6xno5YXmPVy9FUmZ4uLnFB.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hangouts</h5>
+                            <a class="fas fa-map-marker-alt"></a> Goa <br>
+                            <i class="fas fa-briefcase"></i> 3days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>9000 onwards.<br>
+                            
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -68,26 +91,7 @@
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1484264883846-eb04404af310?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i> <!-- empty star -->
-                            </div> <br>
-                            <p>(110 Reviews)</p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
                             </div>
                         </div>
                     </div>
@@ -98,9 +102,10 @@
                     <div class="card mx-3">
                         <img src="https://images.unsplash.com/photo-1544588440-fc7551331160?q=80&w=1522&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Tirupati and nearby</h5>
+                            <a class="fas fa-map-marker-alt"></a> Andhra pradesh <br>
+                            <i class="fas fa-briefcase"></i> 3days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>9000 onwards.<br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -110,16 +115,17 @@
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
                             </div>
                         </div>
                     </div>
                     <div class="card mx-3">
-                        <img src="https://images.unsplash.com/photo-1584005609832-c8ec2a001ae3?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        <img src="https://vajiram-prod.s3.ap-south-1.amazonaws.com/Konark_Sun_Temple_13e71cbb6e.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Sun temple</h5>
+                            <a class="fas fa-map-marker-alt"></a> Konark,odisha <br>
+                            <i class="fas fa-briefcase"></i> 2days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>6000 onwards.<br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -129,26 +135,27 @@
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
                             </div>
                         </div>
                     </div>
                     <div class="card mx-3">
                         <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a class="fas fa-map-marker-alt"></a> Your Location <br>
-                            <i class="fas fa-briefcase"></i> Job Title <br>
+                            <h5 class="card-title">Diving</h5>
+                            <a class="fas fa-map-marker-alt"></a> Goa <br>
+                            <i class="fas fa-briefcase"></i> 3days <br>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>20000 onwards.<br>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div> <br>
                             <p>(110 Reviews)</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button" onclick="confirm()">Button</button>
                             </div>
                         </div>
                     </div>
@@ -160,3 +167,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </html>
+<script>
+    function confirm(){
+        alert("your tour has confirmed. Thank You : ");
+    }
+</script>

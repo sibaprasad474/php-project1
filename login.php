@@ -302,11 +302,7 @@
     </div>
 
     <footer>
-        <p>
-            Created and managed <i class="fa fa-heart"></i> by
-            <a target="_blank" href="https://florin-pop.com">Team-X</a> copyrights 2023 all rights reserved .
-            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-        </p>
+    <p style="text-align:center">©2024 sibaprasad mishra all rights reserved.</p>
     </footer>
 </body>
 <?php

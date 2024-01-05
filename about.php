@@ -177,6 +177,9 @@
             </div>
         </section>
     </div>
+    <footer class="bg-black mt-3" style="bottom:0;">
+    <p class="text-center bg-black text-light">©2024 sibaprasad mishra all rights reserved.</p>
+    </footer>
 </body>
 
 
